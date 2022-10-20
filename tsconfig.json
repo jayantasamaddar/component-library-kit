@@ -1,13 +1,12 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": ["environments/react-*/"],
+  "include": ["./environments/react-emotion-styled"],
   "exclude": [
-    "./**/**/components/**/*.story.tsx",
-    "./**/**/components/**/*.mock.ts",
-    "./**/**/components/**/*.test.tsx",
-    "./**/**/components/**/*.test.ts",
+    "./**/**/src/components/**/*.(?:story|test|mock).(?:ts|tsx)",
     "./**/**/config",
     "./**/**/coverage",
-    ".turbo"
+    ".turbo",
+    "coverage",
+    "./**/**/*.config.js"
   ]
 }
