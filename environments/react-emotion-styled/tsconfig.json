@@ -1,0 +1,21 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src"],
+  "exclude": [
+    "**/*.story.tsx",
+    "**/*.mock.ts",
+    "**/*.test.tsx",
+    "**/*.test.ts",
+    "coverage",
+    ".turbo"
+  ],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "name": "react-emotion-styled",
+  "version": "0.1.0",
+  "description": "A React-Emotion component library starter kit setup with Storybook and Jest for testing.",
+  "repository": {
+    "url": "https://github.com/jayantasamaddar/component-library-extensions.git",
+    "type": "git",
+    "directory": "environments/react-emotion-styled"
+  },
+  "author": "Jayanta Samaddar <jayanta@zenius.one>",
+  "license": "MIT",
+  "main": "dist/cjs/index.ts",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist/",
+    "!dist/ts/**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "ui",
+    "ui-kit",
+    "react",
+    "emotionjs",
+    "components",
+    "component library",
+    "library",
+    "frontend",
+    "design"
+  ],
+  "scripts": {
+    "build": "yarn clean && yarn build:types && yarn build:js",
+    "build-docs": "cp './src/**/*.md' './dist/docs'",
+    "build:js": "rollup -c",
+    "build:types": "tsc --declarationDir dist/types --declaration --emitDeclarationOnly",
+    "clean": "rm -rf dist .rollup.cache",
+    "clean:all": "rm -rf dist node_modules .rollup.cache",
+    "format": "prettier --write src",
+    "storybook": "start-storybook -p 6007",
+    "test": "jest",
+    "test:w": "jest --watch",
+    "test:wa": "jest --watchAll",
+    "test:c": "jest --coverage",
+    "test:cv": "jest --coverage --verbose",
+    "ts-check": "tsc --noemit"
+  },
+  "dependencies": {
+    "@emotion/react": ">=11.9.0",
+    "@emotion/styled": ">=11.8.1",
+    "@zenius-one/ursa-icons": "*"
+  },
+  "devDependencies": {
+    "@types/react": ">=18.0.0",
+    "@types/react-dom": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  }
+}

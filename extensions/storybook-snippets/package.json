@@ -1,0 +1,78 @@
+{
+  "name": "storybook-snippets",
+  "displayName": "Storybook Snippets",
+  "description": "Storybook snippets for quickly scaffolding Stories using CSF 2.0 and CSF 3.0",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jayantasamaddar/component-library-extensions.git"
+  },
+  "icon": "./assets/logo.png",
+  "keywords": [
+    "storybook",
+    "react",
+    "vue",
+    "vue3",
+    "CSF",
+    "snippets",
+    "scaffolding"
+  ],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "command": "storybookSnippets.search",
+        "key": "ctrl+alt+s",
+        "mac": "shift+cmd+s",
+        "when": "editorTextFocus"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/react-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/react-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/react-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/react-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/jest-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/jest-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/jest-storybook-snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
+        "path": "./snippets/jest-storybook-snippets.code-snippets"
+      }
+    ]
+  }
+}

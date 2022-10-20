@@ -1,0 +1,197 @@
+{
+  /*******************************************************************************/
+  /** File Snippets **/
+  /*******************************************************************************/
+  "CSF 2.0: Basic Setup (React JS)": {
+    "scope": "javacript,javascriptreact",
+    "prefix": "sbr",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default {",
+      "\ttitle: 'Components/${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}',",
+      "\tcomponent: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}},",
+      "};",
+      "",
+      "const Template = args => <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />;",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${2}",
+      "};"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 2.0 (React JS)"
+  },
+  "CSF 2.0: Basic Setup (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbr",
+    "body": [
+      "import React from 'react';",
+      "import { ComponentMeta, ComponentStory, ComponentStoryFn } from '@storybook/react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default {",
+      "\ttitle: 'Components/${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}',",
+      "\tcomponent: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}},",
+      "} as ComponentMeta<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}>;",
+      "",
+      "const Template: ComponentStory<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = args => <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />;",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryFn<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${2}",
+      "};"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 2.0 (React TS)"
+  },
+  "CSF 3.0: Basic Setup (React JS)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sbr3",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default { component: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} };",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = {",
+      "\targs: { ${2} }",
+      "};"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 3.0 (React JS)"
+  },
+  "CSF 3.0: Basic Setup (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbr3",
+    "body": [
+      "import React from 'react';",
+      "import { ComponentMeta, ComponentStoryObj } from '@storybook/react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default { component: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } as ComponentMeta<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}>;",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryObj<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = {",
+      "\targs: { ${2} }",
+      "};"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 3.0 (React TS)"
+  },
+  "CSF 3.0: Setup with Render (React JS)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sbr3r",
+    "body": [
+      "import React from 'react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default { component: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} };",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = {",
+      "\trender: args => {",
+      "\t\t${2}",
+      "\t\treturn <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />",
+      "\t}",
+      "};"
+    ],
+    "description": "Scaffold a Story Setup with Render in CSF 3.0 (React JS)"
+  },
+  "CSF 3.0: Setup with Render (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbr3r",
+    "body": [
+      "import React from 'react';",
+      "import { ComponentMeta, ComponentStoryObj } from '@storybook/react';",
+      "",
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}';",
+      "",
+      "export default { component: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } as ComponentMeta<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}>;",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryObj<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = {",
+      "\trender: args => {",
+      "\t\t${2}",
+      "\t\treturn <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />",
+      "\t}",
+      "};"
+    ],
+    "description": "Scaffold a Story Setup with Render in CSF 3.0 (React TS)"
+  },
+  /*******************************************************************************/
+  /** Single Story Snippets **/
+  /*******************************************************************************/
+  "CSF 2.0: Single Story (React JS)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sbrst",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "Add a Single Story in CSF 2.0 (React JS)"
+  },
+  "CSF 2.0: Single Story (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbrst",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryFn<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "Add a Single Story in CSF 2.0 (React TS)"
+  },
+  "CSF 3.0: Single Story (React JS)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sbr3st",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = {",
+      "\targs: {",
+      "\t\t${2}",
+      "\t}",
+      "};"
+    ],
+    "description": "Add a Single Story in CSF 3.0 (React JS)"
+  },
+  "CSF 3.0: Single Story (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbr3st",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryObj<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = {",
+      "\targs: {",
+      "\t\t${2}",
+      "\t}",
+      "};"
+    ],
+    "description": "Add a Single Story in CSF 3.0 (React TS)"
+  },
+  "CSF 3.0: Single Story with Render (React JS)": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "sbr3str",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = {",
+      "\trender: args => {",
+      "\t\t${2}",
+      "\t\treturn <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />",
+      "\t}",
+      "};"
+    ],
+    "description": "Add a Single Story in CSF 3.0 (React JS)"
+  },
+  "CSF 3.0: Single Story with Render (React TS)": {
+    "scope": "typescript,typescriptreact",
+    "prefix": "sbr3str",
+    "body": [
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}: ComponentStoryObj<typeof ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}> = {",
+      "\trender: args => {",
+      "\t\t${2}",
+      "\t\treturn <${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} {...args} />",
+      "\t}",
+      "};"
+    ],
+    "description": "Add a Single Story in CSF 3.0 (React TS)"
+  }
+}

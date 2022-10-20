@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": ["environments/react-*/"],
+  "exclude": [
+    "./**/**/components/**/*.story.tsx",
+    "./**/**/components/**/*.mock.ts",
+    "./**/**/components/**/*.test.tsx",
+    "./**/**/components/**/*.test.ts",
+    "./**/**/config",
+    "./**/**/coverage",
+    ".turbo"
+  ]
+}
