@@ -1,16 +1,19 @@
 {
-  "name": "storybook-snippets",
+  "name": "clk-storybook-snippets",
   "displayName": "Storybook Snippets",
   "description": "Storybook snippets for quickly scaffolding Stories using CSF 2.0 and CSF 3.0",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.72.0"
   },
+  "author": "Jayanta Samaddar <jayanta@zenius.one>",
+  "publisher": "jayantasamaddar",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jayantasamaddar/component-library-extensions.git"
+    "url": "https://github.com/jayantasamaddar/component-library-kit.git",
+    "directory": "extensions/storybook-snippets"
   },
-  "icon": "./assets/logo.png",
+  "icon": "assets/logo.png",
   "keywords": [
     "storybook",
     "react",
@@ -24,14 +27,6 @@
     "Snippets"
   ],
   "contributes": {
-    "keybindings": [
-      {
-        "command": "storybookSnippets.search",
-        "key": "ctrl+alt+s",
-        "mac": "shift+cmd+s",
-        "when": "editorTextFocus"
-      }
-    ],
     "snippets": [
       {
         "language": "javascript",

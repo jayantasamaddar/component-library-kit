@@ -9,6 +9,14 @@ All notable changes to the **Storybook Snippets** extension will be documented i
 
 ---
 
+## 1.0.1 - 2021-10-21
+
+- **Bug Fix:**
+  - Jest Storybook snippets
+    - Fixed an issue with React and Vue snippets having identical prefixes.
+    - Fixed issues with test blocks' Tabstops (`sbritb`, `sbrtestb`, `sbritsnapb` `sbrtestsnapb`, `sbvitb`, `sbvtestb`, `sbvitsnapb` `sbvtestsnapb`)
+  - Removed non-functional keybindings for now. Will be added in an upcoming minor update.
+
 ## 1.0.0 - 2021-10-20
 
 - Launched: Initial release of Storybook Snippets

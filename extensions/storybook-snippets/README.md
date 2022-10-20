@@ -1,10 +1,3 @@
-![Logo](assets/logo.png)
-
-[![Version](https://vsmarketplacebadge.apphb.com/version/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/version-short/dsznajder.es7-react-js-snippets.svg)
-[![Install](https://vsmarketplacebadge.apphb.com/installs/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/installs-short/dsznajder.es7-react-js-snippets.svg)
-[![Downloads](https://vsmarketplacebadge.apphb.com/downloads/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/downloads-short/dsznajder.es7-react-js-snippets.svg)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)](https://vsmarketplacebadge.apphb.com/rating-short/dsznajder.es7-react-js-snippets.svg)
-
 # Introduction
 
 This snippet library includes Storybook snippets for quickly scaffolding Stories using CSF 2.0 or CSF 3.0 and Testing Stories with Jest and Testing Library (for all supported frameworks) / React Test Renderer (for React snapshot testing).
@@ -22,10 +15,10 @@ Storybook Snippets are available in the following languages:
 - `typescript`,
 - `typescriptreact`,
 
-for the following frameworks,
+for use with the following frontend frameworks,
 
 - **React**
-- **Vue 3**,
+- **Vue 3**
 
 in both **CSF 2.0** and [CSF Format 3.0](https://storybook.js.org/blog/component-story-format-3-0/) flavours. The snippets are automatically generated with the same commands given below, depending on whether a file has a `.js | .jsx` extension or `.ts | .tsx` extension.
 
@@ -34,6 +27,12 @@ Apart from this, to enable running tests in **Jest** using **Testing Library (Vu
 ---
 
 ## Project Setup
+
+- Launch VS Code Quick Open (Ctrl+P), paste the following command below, and press enter.
+
+  ```s
+  ext install jayantasamaddar.clk-storybook-snippets
+  ```
 
 - Setup a **React** or a **Vue 3** project using any of the build tools / frameworks available, like Create React App or Next.js or just a plain vanilla install.
 - Install **[Storybook.js](https://storybook.js.org)**.
@@ -171,6 +170,8 @@ The testing snippets are to be used on a `*.test.(?:js|ts|jsx|tsx)` file.
 | **`sbritsnapb`**   | Add a Single React Snapshot Test Block (describe-it syntax)   |
 | **`sbrtestsnapb`** | Add a Single React Snapshot Test Block (describe-test syntax) |
 
+---
+
 ### Commands (Vue)
 
 | Shortcut           | Function                                                    |
@@ -188,6 +189,12 @@ The testing snippets are to be used on a `*.test.(?:js|ts|jsx|tsx)` file.
 
 - The `Tab` key is your friend. Hit `Tab` to cycle through options to edit the injected content.
 - The `Esc` key escapes the content edit mode. This is useful, as if you reach the end of the edit and want to inject a new Story or a new Test, you may want to leave the editing mode.
+
+---
+
+# Goal of this Project
+
+To have a single extension for enabling frontend developers to rapidly develop frontend libraries, websites and application frontends.
 
 ---
 

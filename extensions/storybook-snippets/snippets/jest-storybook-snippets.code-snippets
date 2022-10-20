@@ -193,9 +193,9 @@
     "prefix": "sbritb",
     "body": [
       "it('${1:Rendered in the DOM}', () => {",
-      "\trender(<${3:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${3:Role}('${5}');",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
+      "\trender(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${4:Role}('${5}');",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
       "});"
     ],
     "description": "Single Test Block with Storybook, Jest and React (describe-it syntax)"
@@ -205,9 +205,9 @@
     "prefix": "sbrtestb",
     "body": [
       "test('${1:Rendered in the DOM}', () => {",
-      "\trender(<${3:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${3:Role}('${5}');",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
+      "\trender(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${4:Role}('${5}');",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
       "});"
     ],
     "description": "Single Test Block with Storybook, Jest and React (describe-test syntax)"
@@ -217,8 +217,8 @@
     "prefix": "sbritsnapb",
     "body": [
       "it('${1:Run Snapshot Test}', () => {",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${3:${TM_FILENAME_BASE/.(?:test).*//gi}});",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}).toJSON();",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],
     "description": "Single Snapshot Test Block with Storybook, Jest and React (describe-it syntax)"
@@ -228,8 +228,8 @@
     "prefix": "sbrtestsnapb",
     "body": [
       "test('${1:Run Snapshot Test}', () => {",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${3:${TM_FILENAME_BASE/.(?:test).*//gi}});",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}).toJSON();",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],
     "description": "Single Snapshot Test Block with Storybook, Jest and React (describe-test syntax)"
@@ -239,35 +239,35 @@
   /*******************************************************************************/
   "Single Test Block (describe-it) - Vue": {
     "scope": "javascript,typescript",
-    "prefix": "sbritb",
+    "prefix": "sbvitb",
     "body": [
       "it('${1:Rendered in the DOM}', () => {",
-      "\trender(<${3:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${3:Role}('${5}');",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
+      "\trender(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${4:Role}('${5}');",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
       "});"
     ],
-    "description": "Single Test Block with Storybook, Jest and React (describe-it syntax)"
+    "description": "Single Test Block with Storybook, Jest and Vue (describe-it syntax)"
   },
   "Single Test Block (describe-test) - Vue": {
     "scope": "javascript,typescript",
-    "prefix": "sbrtestb",
+    "prefix": "sbvtestb",
     "body": [
       "test('${1:Rendered in the DOM}', () => {",
-      "\trender(<${3:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${3:Role}('${5}');",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
+      "\trender(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />);",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = screen.getBy${4:Role}('${5}');",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toHaveAttribute('${6:name}', ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}.args?.${7:${6:name}});",
       "});"
     ],
-    "description": "Single Test Block with Storybook, Jest and React (describe-test syntax)"
+    "description": "Single Test Block with Storybook, Jest and Vue (describe-test syntax)"
   },
   "Single Snapshot Test Block (describe-it) - Vue": {
     "scope": "javascript,typescript",
     "prefix": "sbvitsnapb",
     "body": [
       "it('${1:Run Snapshot Test}', () => {",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${3:${TM_FILENAME_BASE/.(?:test).*//gi}});",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${2:${TM_FILENAME_BASE/.(?:test).*//gi}});",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],
     "description": "Single Snapshot Test Block with Storybook, Jest and Vue (describe-it syntax)"
@@ -277,8 +277,8 @@
     "prefix": "sbvtestsnapb",
     "body": [
       "test('${1:Run Snapshot Test}', () => {",
-      "\tconst ${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${3:${TM_FILENAME_BASE/.(?:test).*//gi}});",
-      "\texpect(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = mount(${2:${TM_FILENAME_BASE/.(?:test).*//gi}});",
+      "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],
     "description": "Single Snapshot Test Block with Storybook, Jest and Vue (describe-test syntax)"
