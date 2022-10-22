@@ -2,7 +2,7 @@
   "name": "clk-storybook-snippets",
   "displayName": "Storybook Snippets",
   "description": "Storybook snippets for quickly scaffolding Stories using CSF 2.0 and CSF 3.0",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -30,27 +30,27 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/react-storybook-snippets.code-snippets"
+        "path": "./snippets/js-react-storybook-snippets.code-snippets"
       },
       {
         "language": "javascriptreact",
-        "path": "./snippets/react-storybook-snippets.code-snippets"
+        "path": "./snippets/js-react-storybook-snippets.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/react-storybook-snippets.code-snippets"
+        "path": "./snippets/ts-react-storybook-snippets.code-snippets"
       },
       {
         "language": "typescriptreact",
-        "path": "./snippets/react-storybook-snippets.code-snippets"
+        "path": "./snippets/ts-react-storybook-snippets.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue-storybook-snippets.code-snippets"
+        "path": "./snippets/js-vue-storybook-snippets.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue-storybook-snippets.code-snippets"
+        "path": "./snippets/ts-vue-storybook-snippets.code-snippets"
       },
       {
         "language": "javascript",

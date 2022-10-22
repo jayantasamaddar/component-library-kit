@@ -217,7 +217,7 @@
     "prefix": "sbritsnapb",
     "body": [
       "it('${1:Run Snapshot Test}', () => {",
-      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}).toJSON();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer.create(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />).toJSON();",
       "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],
@@ -228,7 +228,7 @@
     "prefix": "sbrtestsnapb",
     "body": [
       "test('${1:Run Snapshot Test}', () => {",
-      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer(${2:${TM_FILENAME_BASE/.(?:test).*//gi}}).toJSON();",
+      "\tconst ${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El = renderer.create(<${2:${TM_FILENAME_BASE/.(?:test).*//gi}} />).toJSON();",
       "\texpect(${3:${TM_FILENAME_BASE/.(?:test).*//gi}}El).toMatchSnapshot();",
       "});"
     ],

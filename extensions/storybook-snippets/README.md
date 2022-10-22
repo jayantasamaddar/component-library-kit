@@ -72,7 +72,7 @@ Apart from this, to enable running tests in **Jest** using **Testing Library (Vu
 ```s
 # Syntax for CSF 2.0
 
-[ sb ][ r | v ][ st ]
+[ sb ][ r | v ][ st | tm ]
 ```
 
 **Where**,
@@ -83,18 +83,20 @@ Apart from this, to enable running tests in **Jest** using **Testing Library (Vu
   - **`r`** - React
   - **`v`** - Vue
 
-- **`st`** - Add a Single Story.
+- **`st` | `tm`** - (Optional) Add either a Single Story (`st`) or a Single Template (`tm`). If not provided, scaffolds the entire setup.
 
 --
 
 ### CSF 2.0 - Commands
 
-| Shortcut    | Function                                       |
-| ----------- | ---------------------------------------------- |
-| **`sbr`**   | CSF 2.0 - Scaffold a Basic Story Setup (React) |
-| **`sbrst`** | CSF 2.0 - Add a single Story (React)           |
-| **`sbv`**   | CSF 2.0 - Scaffold a Basic Story Setup (Vue 3) |
-| **`sbvst`** | CSF 2.0 - Add a single Story (Vue 3)           |
+| Shortcut    | Framework | Function                                            |
+| ----------- | --------- | --------------------------------------------------- |
+| **`sbr`**   | React     | CSF 2.0 - Scaffold a Basic Story Setup with imports |
+| **`sbrtm`** | React     | CSF 2.0 - Add a single Template                     |
+| **`sbrst`** | React     | CSF 2.0 - Add a single Story                        |
+| **`sbv`**   | Vue 3     | CSF 2.0 - Scaffold a Basic Story Setup with imports |
+| **`sbvtm`** | Vue 3     | CSF 2.0 - Add a single Template                     |
+| **`sbvst`** | Vue 3     | CSF 2.0 - Add a single Story                        |
 
 ---
 
@@ -103,7 +105,7 @@ Apart from this, to enable running tests in **Jest** using **Testing Library (Vu
 ```s
 # Syntax for CSF 3.0
 
-[ sb ][ r | v ][ 3 ][ r ]
+[ sb ][ r | v ][ 3 ][ st ][ r ]
 ```
 
 **Where**,
@@ -122,12 +124,12 @@ Apart from this, to enable running tests in **Jest** using **Testing Library (Vu
 
 ### CSF 3.0 - Commands
 
-| Shortcut      | Function                                                        |
-| ------------- | --------------------------------------------------------------- |
-| **`sbr3`**    | CSF 3.0 - Scaffold a Basic Story Setup (React)                  |
-| **`sbr3r`**   | CSF 3.0 - Scaffold a Story Setup with Render in CSF 3.0 (React) |
-| **`sbr3st`**  | CSF 3.0 - Add a single Story (React)                            |
-| **`sbr3str`** | CSF 3.0 - Add a single Story with Render function for React     |
+| Shortcut      | Framework | Function                                                             |
+| ------------- | --------- | -------------------------------------------------------------------- |
+| **`sbr3`**    | React     | CSF 3.0 - Scaffold a Basic Story Setup with imports                  |
+| **`sbr3r`**   | React     | CSF 3.0 - Scaffold a Story Setup with Render in CSF 3.0 with imports |
+| **`sbr3st`**  | React     | CSF 3.0 - Add a single Story                                         |
+| **`sbr3str`** | React     | CSF 3.0 - Add a single Story with Render function                    |
 
 > **Note:** Vue 3 is not fully stable yet with CSF 3.0, hence the snippet is not yet added. It will be added in a future release.
 
@@ -161,27 +163,27 @@ The testing snippets are to be used on a `*.test.(?:js|ts|jsx|tsx)` file.
 
 ### Commands (React)
 
-| Shortcut           | Function                                                      |
-| ------------------ | ------------------------------------------------------------- |
-| **`sbrit`**        | Scaffold a React Test (describe-it syntax)                    |
-| **`sbrtest`**      | Scaffold a React Test (describe-test syntax)                  |
-| **`sbritsnap`**    | Scaffold a React Snapshot Test (describe-it syntax)           |
-| **`sbrtestsnap`**  | Scaffold a React Test (describe-test syntax)                  |
-| **`sbritsnapb`**   | Add a Single React Snapshot Test Block (describe-it syntax)   |
-| **`sbrtestsnapb`** | Add a Single React Snapshot Test Block (describe-test syntax) |
+| Shortcut           | Framework | Function                                                     |
+| ------------------ | --------- | ------------------------------------------------------------ |
+| **`sbrit`**        | React     | Scaffold a Test (describe-it syntax) with imports            |
+| **`sbrtest`**      | React     | Scaffold a Test (describe-test syntax) with imports          |
+| **`sbritsnap`**    | React     | Scaffold a Snapshot Test (describe-it syntax) with imports   |
+| **`sbrtestsnap`**  | React     | Scaffold a Snapshot Test (describe-test syntax) with imports |
+| **`sbritsnapb`**   | React     | Add a Single Snapshot Test Block (describe-it syntax)        |
+| **`sbrtestsnapb`** | React     | Add a Single Snapshot Test Block (describe-test syntax)      |
 
 ---
 
 ### Commands (Vue)
 
-| Shortcut           | Function                                                    |
-| ------------------ | ----------------------------------------------------------- |
-| **`sbvit`**        | Scaffold a Vue Test (describe-it syntax)                    |
-| **`sbvtest`**      | Scaffold a Vue Test (describe-test syntax)                  |
-| **`sbvitsnap`**    | Scaffold a Vue Snapshot Test (describe-it syntax)           |
-| **`sbvtestsnap`**  | Scaffold a Vue Test (describe-test syntax)                  |
-| **`sbvitsnapb`**   | Add a Single Vue Snapshot Test Block (describe-it syntax)   |
-| **`sbvtestsnapb`** | Add a Single Vue Snapshot Test Block (describe-test syntax) |
+| Shortcut           | Framework | Function                                                     |
+| ------------------ | --------- | ------------------------------------------------------------ |
+| **`sbvit`**        | Vue       | Scaffold a Test (describe-it syntax) with imports            |
+| **`sbvtest`**      | Vue       | Scaffold a Test (describe-test syntax) with imports          |
+| **`sbvitsnap`**    | Vue       | Scaffold a Snapshot Test (describe-it syntax) with imports   |
+| **`sbvtestsnap`**  | Vue       | Scaffold a Snapshot Test (describe-test syntax) with imports |
+| **`sbvitsnapb`**   | Vue       | Add a Single Snapshot Test Block (describe-it syntax)        |
+| **`sbvtestsnapb`** | Vue       | Add a Single Snapshot Test Block (describe-test syntax)      |
 
 ---
 

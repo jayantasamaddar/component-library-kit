@@ -1,0 +1,62 @@
+{
+  /*******************************************************************************/
+  /** File Snippets **/
+  /*******************************************************************************/
+  "CSF 2.0: Basic Setup (Vue JS)": {
+    "scope": "javascript",
+    "prefix": "sbv",
+    "body": [
+      "import { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} } from './${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.vue';",
+      "",
+      "export default {",
+      "\ttitle: 'Components/${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}',",
+      "\tcomponent: ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}},",
+      "};",
+      "",
+      "const Template = args => ({",
+      "\tcomponents: { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} },",
+      "\tsetup() {",
+      "\t\treturn { args };",
+      "\t},",
+      "\ttemplate: '<${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} v-bind=\"args\" />'",
+      "});",
+      "",
+      "export const Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${2}",
+      "};"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 2.0 (Vue JS)"
+  },
+  /*******************************************************************************/
+  /** Single Template Snippets **/
+  /*******************************************************************************/
+  "CSF 2.0: New Template": {
+    "scope": "javascript",
+    "prefix": "sbvtm",
+    "body": [
+      "const ${2:Default}Template = args => ({",
+      "\tcomponents: { ${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} },",
+      "\tsetup() {",
+      "\t\treturn { args };",
+      "\t},",
+      "\ttemplate: '<${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} v-bind=\"args\" />'",
+      "});"
+    ],
+    "description": "Scaffold a Basic Story Setup in CSF 2.0 (Vue JS)"
+  },
+  /*******************************************************************************/
+  /** Single Story Snippets **/
+  /*******************************************************************************/
+  "CSF 2.0: Single Story (Vue JS)": {
+    "scope": "javascript",
+    "prefix": "sbvst",
+    "body": [
+      "export const ${2:Default}${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}} = Template.bind({});",
+      "Default${1:${TM_FILENAME_BASE/.(?:story|stories).*//gi}}.args = {",
+      "\t${3}",
+      "};"
+    ],
+    "description": "Add a Single Story in CSF 2.0 (Vue JS)"
+  }
+}

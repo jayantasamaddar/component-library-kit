@@ -9,6 +9,21 @@ All notable changes to the **Storybook Snippets** extension will be documented i
 
 ---
 
+## 1.0.3 - 2021-10-23
+
+- **Bug Fix**
+  - Jest Snippets - Snapshot tests to render a Component in React inside a closed tag, unlike Vue where it is mounted with just the component name.
+
+## 1.0.2 - 2021-10-22
+
+- **Bug Fix:**
+  - Jest Snippets - React Snapshot testing `renderer.create`, mistakenly showing up as `renderer`.
+- **Added:**
+  - **New Story Template** (CSF 2.0): **`sbrtm`** (React) and **`sbvtm`** (Vue).
+- **Updated:**
+  - Code-splitting done to ensure javascript snippets do not show up in a `.ts` or `.tsx` file and vice versa.
+  - [README](/README.md) updated with the new snippets.
+
 ## 1.0.1 - 2021-10-21
 
 - **Bug Fix:**
